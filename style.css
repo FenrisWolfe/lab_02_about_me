@@ -1,9 +1,12 @@
 header {
-  background: #666;
+  text-align: center;
+  background: #8E954B;
   color: #fff;
   padding: 20px;
 }
-
+body {
+  background-color: #917928;
+}
 h1 {
   font-size: 20px;
   margin-bottom: 20px;
@@ -11,4 +14,7 @@ h1 {
 
 p {
   margin-bottom: 20px;
+}
+footer {
+  background-color: #917928;
 }
