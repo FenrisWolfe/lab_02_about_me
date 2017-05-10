@@ -16,7 +16,7 @@ var militaryService = prompt(' Do you think I served in the Navy? Answer with a 
 console.log('Military Service guess' + militaryService);
 alert(' you said ' + militaryService + ' to my military service');
 
-if (military.trim().toLowerCase() == 'yes'){
+if (militaryService.trim().toLowerCase() == 'yes'){
   alert('That is right ' + userName + ' I served in the United States Navy. Next you get to guess how many years I served.  Good Luck!');
 }else{
   alert('Actually, I served in the United States Navy.');
@@ -24,8 +24,8 @@ if (military.trim().toLowerCase() == 'yes'){
 
 //asksuser to guess my time in the service and returns an answer
 var yearsServed = prompt(' How many years do you think I served? Hint, it is between 20 and 30.');
-alert(' you think I did ' + yearsServed + ' years of service. I did over 24');
 console.log('Years Served Guess' + yearsServed);
+alert(' you think I did ' + yearsServed + ' years of service. I did over 24');
 
 if (yearsServed <= 23){
   alert(' Sorry, ' + userName + ' I served over 24! ');
@@ -39,6 +39,7 @@ if (yearsServed <= 23){
 //asks user if they think I like dogs
 var kaNine = confirm(' do you think I like dogs? Click OK for Yes, Cancel for No.');
 console.log(kaNine);
+alert('you guessed my dog lover status as ' + kaNine);
 
 if (kaNine == true){
   alert('I LOVE dogs!');
@@ -48,6 +49,7 @@ if (kaNine == true){
 // asks the user to guess my age
 var age = prompt(' Now for a more difficult question. How old do you think I am? ');
 console.log(age);
+alert('you guessed my age as ' + age);
 
 if(age <=50){
   alert(' Aww, you\'re too kind!');
@@ -60,9 +62,15 @@ if(age <=50){
     }
   }
 }
+var quirky = confirm('One last thing, Click OK if you think I am Quirky or Cancel if not. ');
+console.log('Quirky Status is: ' + quirky);
+alert('You think my Quirky status is: ' + quirky + ', truth be told, I am but so is JavaScript! But it\'s FUN!');
 // This will display the alerts / answers to the prompts and confirms
-alert('you guessed my dog lover status as ' + kaNine);
-alert('you guessed my age as ' + age);
 
 //this concatenates all the questions into one alert and displays it to the user
 alert('so you guessed, ' + militaryService + ' to the question of did I serve, ' + yearsServed + ' is your guess to how many years I served, ' + ' my dog lover status as ' + kaNine + ' which in fact I do, and ' + age + ' is the age that you guessed I am. I am 51 BTW.');
+  if (quirky == true){
+    alert('Oh yes and you think I am Quirky!');
+  } else {
+    alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
+  }
