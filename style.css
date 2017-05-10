@@ -1,17 +1,46 @@
+html {
+  border-style: solid;
+  border-color: #744B19;
+  border-radius: 30px;
+}
+
 header {
+  border-radius: 10px;
   text-align: center;
   background: #8E954B;
-  color: #fff;
+  color: Black;
   padding: 20px;
 }
+
 body {
+  border-style: outset;
+  border-color: #6C4516;
+  border-radius: 10px;
   background-color: #917928;
+}
+
+main {
+  border-radius: 10px;
+  background-color: #966F22;
 }
 h1 {
   font-size: 20px;
   margin-bottom: 20px;
 }
+h2 {
 
+}
+img {
+  display: inline;
+  max-width:230px;
+  max-height:95px;
+  width: auto;
+  height: auto;
+}
+
+#user_story {
+
+}
 p {
   margin-bottom: 20px;
 }
