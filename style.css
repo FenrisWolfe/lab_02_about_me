@@ -1,10 +1,14 @@
+
+
 html {
+  padding: 2px;
   border-style: solid;
   border-color: #744B19;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 header {
+  border-style: solid;
   border-radius: 10px;
   text-align: center;
   background: #8E954B;
@@ -13,6 +17,7 @@ header {
 }
 
 body {
+  height: 100%;
   border-style: outset;
   border-color: #6C4516;
   border-radius: 10px;
@@ -20,6 +25,7 @@ body {
 }
 
 main {
+  padding: 5px;
   border-radius: 10px;
   background-color: #966F22;
 }
@@ -31,6 +37,8 @@ h2 {
 
 }
 img {
+  border-style: solid;
+  border-radius: 5px;
   display: inline;
   max-width:230px;
   max-height:95px;
@@ -45,5 +53,7 @@ p {
   margin-bottom: 20px;
 }
 footer {
-  background-color: #917928;
+  padding: 2px;
+  border-radius: 5px;
+  background-color: #8E954B;
 }

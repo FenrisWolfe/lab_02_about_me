@@ -42,7 +42,7 @@ console.log(kaNine);
 alert('you guessed my dog lover status as ' + kaNine);
 
 if (kaNine == true){
-  alert('I LOVE dogs!');
+  alert('You\'re right, I love dogs!');
 }else {
   alert(' Actually, I Love Dogs! I like cats too. ');
 }
@@ -70,7 +70,7 @@ alert('You think my Quirky status is: ' + quirky + ', truth be told, I am but so
 //this concatenates all the questions into one alert and displays it to the user
 alert('so you guessed, ' + militaryService + ' to the question of did I serve, ' + yearsServed + ' is your guess to how many years I served, ' + ' my dog lover status as ' + kaNine + ' which in fact I do, and ' + age + ' is the age that you guessed I am. I am 51 BTW.');
   if (quirky == true){
-    alert('Oh yes and you think I am Quirky!');
+    alert('Oh yes, and you think I am Quirky!');
   } else {
     alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
   }
