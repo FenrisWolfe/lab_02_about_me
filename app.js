@@ -16,7 +16,7 @@ var militaryService = prompt(' Do you think I served in the Navy? Answer with a 
 console.log('Military Service guess' + militaryService);
 alert(' you said ' + militaryService + ' to my military service');
 
-if (militaryService.trim().toLowerCase() == 'yes'){
+if (militaryService.trim().toLowerCase() === 'yes'){
   alert('That is right ' + userName + ' I served in the United States Navy. Next you get to guess how many years I served.  Good Luck!');
 }else{
   alert('Actually, I served in the United States Navy.');
@@ -41,7 +41,7 @@ var kaNine = confirm(' do you think I like dogs? Click OK for Yes, Cancel for No
 console.log(kaNine);
 alert('you guessed my dog lover status as ' + kaNine);
 
-if (kaNine == true){
+if (kaNine === true){
   alert('You\'re right, I love dogs!');
 }else {
   alert(' Actually, I Love Dogs! I like cats too. ');
@@ -51,13 +51,13 @@ var age = prompt(' Now for a more difficult question. How old do you think I am?
 console.log(age);
 alert('you guessed my age as ' + age);
 
-if(age <=50){
+if(age <= 50){
   alert(' Aww, you\'re too kind! but my age is actually 51.');
 }else {
-  if(age >=52){
+  if(age >= 52){
     alert('Oh Come On! I\'m only 51');
   }else {
-    if(age == 51){
+    if(age === 51){
       alert(' That\'s right!')
     }
   }
@@ -69,7 +69,7 @@ alert('You think my Quirky status is: ' + quirky + ', truth be told, I am but so
 
 //this concatenates all the questions into one alert and displays it to the user
 alert('so you guessed, ' + militaryService + ' to the question of did I serve, ' + yearsServed + ' is your guess to how many years I served, ' + ' my dog lover status as ' + kaNine + ' which in fact I do, and ' + age + ' is the age that you guessed I am. I am 51 BTW.');
-  if (quirky == true){
+  if (quirky === true){
     alert('Oh yes, and you think I am Quirky!');
   } else {
     alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
