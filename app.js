@@ -52,7 +52,7 @@ console.log(age);
 alert('you guessed my age as ' + age);
 
 if(age <=50){
-  alert(' Aww, you\'re too kind!');
+  alert(' Aww, you\'re too kind! but my age is actually 51.');
 }else {
   if(age >=52){
     alert('Oh Come On! I\'m only 51');
@@ -74,3 +74,20 @@ alert('so you guessed, ' + militaryService + ' to the question of did I serve, '
   } else {
     alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
   }
+  var books = ['Sci-Fi', 'Fantasy', 'Mystery', 'Fiction'];
+  var whatBooks = prompt('What kind of books do you think I like?');
+  var flag;
+
+  for (var i=0; i<books.length; i++) {
+    console.log('Current books: ', books[i]);
+
+    if (whatBooks === books[i]) {
+      alert('Good guess. That is one of my favorite kind of books.');
+      flag = true;
+      break;
+    }
+  }
+
+if (!flag) {
+  alert('Not a kind of book I like, but good guess.');
+}
