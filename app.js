@@ -75,41 +75,47 @@ alert('so you guessed, ' + militaryService + ' to the question of did I serve, '
     alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
   }
 
-  // sixth question added, asking wat type of books I like
-  var books = ['SCI-FI', 'FANTASY', 'MYSTERY', 'FICTION'];
-  var whatBooks = prompt('What kind of books do you think I like?');
-  console.log('whatbook Guess: ' + whatBooks);
-  var flag;
+  //sixth question added giving user four tries to guess a number
+  var number;
+  var counter = 0;
 
-  for (var i=0; i<books.length; i++) {
-    console.log('Current books: ', books[i]);
+  while (number !== 6 && counter<6) {
+    number = parseInt(prompt('what number am I guessing? You have SIX tries'));
 
-    if (whatBooks.trim().toUpperCase() === books[i]) {
-      alert('Good guess. That is one of my favorite kind of books.');
-      flag = true;
-      break;
+    if (number < 6) {
+      alert('you guessed too low');
+      counter++;
+      console.log('counter' + counter);
+    } else if (number > 6) {
+      alert('you guessed too high');
+      counter++;
+      console.log('counter' + counter);
+    } else if (number === NaN || number === null) {
+      alert('enter a number please');
+      counter++;
+      console.log('counter' + counter);
+    } else if (number === 6) {
+      alert('that\'s Right!')
+      console.log('counter' + counter);
     }
   }
 
-if (!flag) {
-  alert('Not a kind of book I like, but good guess.');
+// seventh question added, asking wat type of books I like
+var books = ['SCI-FI', 'FANTASY', 'MYSTERY', 'FICTION'];
+var whatBooks = prompt('What kind of books do you think I like?');
+console.log('whatbook Guess: ' + whatBooks);
+var flag;
+
+for (var i=0; i<books.length; i++) {
+  console.log('Current books: ', books[i]);
+
+  if (whatBooks.trim().toUpperCase() === books[i]) {
+    alert('Good guess. That is one of my favorite kind of books.');
+    flag = true;
+    break;
+  }
 }
 
-//seventh question added giving user three tries to guess my middle name
-var number;
-var counter = 1;
-
-while (number !== 20) {
-  number = parseInt(prompt('what is your fave number?'));
-
-  if (number < 20) {
-    alert('you guessed too low');
-    counter++;
-  } else if (number > 20) {
-    alert('you guessed too high');
-    counter++;
-  } else if (number === NaN || number === null) {
-    alert('enter a number please');
-    counter++;
-  }
+if (!flag) {
+  alert('Not a kind of book I like, but good guess.');
 }
