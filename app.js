@@ -80,7 +80,7 @@ alert('so you guessed, ' + militaryService + ' to the question of did I serve, '
   var counter = 0;
 
   while (number !== 6 && counter<6) {
-    number = parseInt(prompt('what number am I guessing? You have SIX tries'));
+    number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
 
     if (number < 6) {
       alert('you guessed too low');
