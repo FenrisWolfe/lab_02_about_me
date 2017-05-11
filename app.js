@@ -74,14 +74,17 @@ alert('so you guessed, ' + militaryService + ' to the question of did I serve, '
   } else {
     alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
   }
-  var books = ['Sci-Fi', 'Fantasy', 'Mystery', 'Fiction'];
+
+  // sixth question added, asking wat type of books I like
+  var books = ['SCI-FI', 'FANTASY', 'MYSTERY', 'FICTION'];
   var whatBooks = prompt('What kind of books do you think I like?');
+  console.log('whatbook Guess: ' + whatBooks);
   var flag;
 
   for (var i=0; i<books.length; i++) {
     console.log('Current books: ', books[i]);
 
-    if (whatBooks === books[i]) {
+    if (whatBooks.trim().toUpperCase() === books[i]) {
       alert('Good guess. That is one of my favorite kind of books.');
       flag = true;
       break;
@@ -90,4 +93,23 @@ alert('so you guessed, ' + militaryService + ' to the question of did I serve, '
 
 if (!flag) {
   alert('Not a kind of book I like, but good guess.');
+}
+
+//seventh question added giving user three tries to guess my middle name
+var number;
+var counter = 1;
+
+while (number !== 20) {
+  number = parseInt(prompt('what is your fave number?'));
+
+  if (number < 20) {
+    alert('you guessed too low');
+    counter++;
+  } else if (number > 20) {
+    alert('you guessed too high');
+    counter++;
+  } else if (number === NaN || number === null) {
+    alert('enter a number please');
+    counter++;
+  }
 }
