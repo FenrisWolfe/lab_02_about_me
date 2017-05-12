@@ -110,7 +110,7 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
     var number;
     var counter = 0;
 
-  while (number !== 6 && counter<6) {
+  while (number !== 6 && counter< 6) {
     number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
 
     if (number < 6) {
@@ -130,11 +130,11 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
       console.log('counter' + counter);
       return number;
     } else if (counter >= 6) {
-      alert ('Sorry you have run out of guesses'); 
+      alert ('Sorry you have run out of guesses');
     }
     }
   }
-}
+
 
 guessing();
 
