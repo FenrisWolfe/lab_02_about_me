@@ -110,33 +110,31 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
     var number;
     var counter = 0;
 
-  while (number !== 6 && counter< 6) {
-    number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
-
-    if (number < 6) {
-      alert('you guessed too low');
-      counter++;
-      console.log('counter' + counter);
-    } else if (number > 6) {
-      alert('you guessed too high');
-      counter++;
-      console.log('counter' + counter);
-    } else if (number === NaN || number === null) {
-      alert('enter a number please');
-      counter++;
-      console.log('counter' + counter);
-    } else if (number === 6) {
-      alert('that\'s Right!')
-      console.log('counter' + counter);
-      return number;
-    } else if (counter >= 6) {
-      alert ('Sorry you have run out of guesses');
-    }
+    while (number !== 6 && counter < 6) {
+      number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
+      console.log(number);
+      if (number <= 5) {
+        alert('you guessed too low');
+        counter++;
+        console.log('counter' + counter);
+      } else if (number >= 7) {
+        alert('you guessed too high');
+        counter++;
+        console.log('counter' + counter);
+      } else if (isNaN(number)) {
+        alert('enter a number please');
+        counter++;
+        console.log('counter' + counter);
+      } else if (number === 6) {
+        alert('that\'s Right!')
+        console.log('counter' + counter);
+      } else if (counter > 6) {
+        alert ('Sorry you have run out of guesses');
+        return number;
+      }
     }
   }
-
-
-guessing();
+  guessing();
 
 // // seventh question added, asking wat type of books I like
 var guessBooks = function () {
