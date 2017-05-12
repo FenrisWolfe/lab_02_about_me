@@ -8,7 +8,7 @@ html {
 }
 
 header {
-  position: fixed;
+  position: relative;
   border-style: solid;
   border-radius: 10px;
   text-align: center;
