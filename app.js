@@ -129,6 +129,9 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
       alert('that\'s Right!')
       console.log('counter' + counter);
       return number;
+    } else if (counter >= 6) {
+      alert ('Sorry you have run out of guesses'); 
+    }
     }
   }
 }
