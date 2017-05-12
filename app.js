@@ -126,7 +126,7 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
         counter++;
         console.log('counter' + counter);
       } else if (number === 6) {
-        alert('that\'s Right!')
+        alert('that\'s Right!');
         console.log('counter' + counter);
       } else if (counter > 6) {
         alert ('Sorry you have run out of guesses');
