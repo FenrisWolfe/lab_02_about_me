@@ -35,7 +35,7 @@ main {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 40px;
   margin-bottom: 20px;
 }
 
@@ -47,6 +47,10 @@ img {
   max-height:190px;
 }
 
+h2 {
+  font-size: 30px;
+  margin-bottom: 20px
+}
 p {
   margin-bottom: 20px;
 }
