@@ -101,6 +101,7 @@ var guessing = function() {
     number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
     console.log(number);
     if (counter > 6 ) {
+      alert ('Sorry you have run out of guesses');
       done = false;
       return done;
     } else {
@@ -120,37 +121,34 @@ var guessing = function() {
       } else if (number === 6) {
         alert('that\'s Right!');
         console.log('counter' + counter);
-      } else if (counter > 6) {
-          alert ('Sorry you have run out of guesses');
-          return number;
-        }
       }
     }
   }
-  guessing();
+}
+guessing();
 
-  // // seventh question added, asking wat type of books I like
-  var guessBooks = function() {
-    var books = ['SCI-FI', 'FANTASY', 'MYSTERY', 'FICTION', 'WESTERNS'];
-    var whatBooks = prompt('What kind of books do you think I like?');
+// // seventh question added, asking wat type of books I like
+var guessBooks = function() {
+  var books = ['SCI-FI', 'FANTASY', 'MYSTERY', 'FICTION', 'WESTERNS'];
+  var whatBooks = prompt('What kind of books do you think I like?');
+  // logs the users response to the console
+  console.log('whatbook Guess: ' + whatBooks);
+  var flag;
+
+  for (var i=0; i<books.length; i++) {
     // logs the users response to the console
-    console.log('whatbook Guess: ' + whatBooks);
-    var flag;
+    console.log('Current books: ', books[i]);
 
-    for (var i=0; i<books.length; i++) {
-      // logs the users response to the console
-      console.log('Current books: ', books[i]);
-
-      if (whatBooks.trim().toUpperCase() === books[i]) {
-        alert('Good guess. That is one of my favorite kind of books.');
-        flag = true;
-        break;
-      }
-    }
-
-    if (!flag) {
-      alert('Not a kind of book I like, but good guess.');
+    if (whatBooks.trim().toUpperCase() === books[i]) {
+      alert('Good guess. That is one of my favorite kind of books.');
+      flag = true;
+      break;
     }
   }
 
-  guessBooks();
+  if (!flag) {
+    alert('Not a kind of book I like, but good guess.');
+  }
+}
+
+guessBooks();
