@@ -1,6 +1,8 @@
 
 
 html {
+  margin: auto;
+  width: 960px;
   padding: 2px;
   border-style: solid;
   border-color: #744B19;
@@ -18,7 +20,8 @@ header {
 }
 
 body {
-  height: 100%;
+  margin: 5px;
+  height: inherit;
   border-style: outset;
   border-color: #6C4516;
   border-radius: 10px;
@@ -30,31 +33,25 @@ main {
   border-radius: 10px;
   background-color: #966F22;
 }
+
 h1 {
   font-size: 20px;
   margin-bottom: 20px;
 }
-h2 {
 
-}
 img {
   border-style: solid;
   border-radius: 5px;
   display: inline;
-  max-width:230px;
-  max-height:95px;
-  width: auto;
-  height: auto;
+  max-width:460px;
+  max-height:190px;
 }
 
-#user_story {
-
-}
 p {
   margin-bottom: 20px;
 }
+
 footer {
-  po
   padding: 2px;
   border-radius: 5px;
   background-color: #8E954B;
