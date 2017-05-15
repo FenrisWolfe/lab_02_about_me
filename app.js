@@ -16,7 +16,7 @@ var militaryService = function() {
   // logs the users response to the console
   console.log('Military Service guess', answer);
 
-  if (answer.trim().toLowerCase() === 'yes' || 'y'){
+  if (answer.trim().toLowerCase() == 'yes' || 'y'){
     alert('That is right ' + userNameAnswer + ' I served in the United States Navy. Next you get to guess whether I deployed.  Good Luck!');
   } else {
     alert('Actually, I served in the United States Navy.');
@@ -31,7 +31,7 @@ var dePloyed = function() {
   // logs the users response to the console
   console.log('Years Served Guess' + answer);
 
-  if (answer.trim().toLowerCase() === 'yes' || 'y'){
+  if (answer.trim().toLowerCase() == 'yes' || 'y'){
     alert(userNameAnswer + ' you think I did deploy overseas, I did.');
   } else {
     alert('Nope! Wrong answer! I actually deployed several times overseas.');
