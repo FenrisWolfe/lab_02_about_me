@@ -100,7 +100,7 @@ var guessing = function() {
   while (number !== 6 && counter < 6 && done) {
     number = parseInt(prompt('what number am I guessing between 1 and 10? You have SIX tries'));
     console.log(number);
-    if (counter > 6 ) {
+    if (counter >= 6 ) {
       alert ('Sorry you have run out of guesses');
       done = false;
       return done;
