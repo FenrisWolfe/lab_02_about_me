@@ -1,5 +1,8 @@
 'use strict';
-
+var console;
+var prompt;
+var alert;
+var confirm;
 /*This is the code that will ask for question input, either by typing in an
 answer or clicing ok or cancel as a yes or no prompt and return a response to
 the user using their own name. This*/
@@ -7,7 +10,7 @@ var userNameAnswer = prompt('Hey there! What is your Name?');
 //this will log the users name to the console
 console.log('username is', userNameAnswer);
 // return a greeting with the users name
-alert('Hello, '+ userNameAnswer + ', Welcome to my About me Page.');
+alert('Hello, ' + userNameAnswer + ', Welcome to my About me Page.');
 
 //questions about me start here.
 // asks if I served in the Military
