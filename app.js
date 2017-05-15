@@ -23,7 +23,7 @@ var militaryService = function() {
   }
   alert('you said ' + answer + ' to my military service');
   return answer;
-}
+};
 
 // asks user to guess if I deployed overseas and returns an answer
 var dePloyed = function() {
@@ -37,7 +37,7 @@ var dePloyed = function() {
     alert('Nope! Wrong answer! I actually deployed several times overseas.');
     return answer;
   }
-}
+};
 
 //asks user if they think I like dogs
 var kaNine = function() {
@@ -53,7 +53,7 @@ var kaNine = function() {
     alert(' Actually, I Love Dogs! I like cats too. ');
     return dogLover;
   }
-}
+};
 
 // // asks the user to guess my age
 var age = function() {
@@ -68,7 +68,7 @@ var age = function() {
     alert('Oh Come On! I\'m Like, 51');
     return answer;
   }
-}
+};
 
 var quirky = function() {
   var answer = confirm('One last thing, Click OK if you think I am Quirky or Cancel if not. ');
@@ -76,7 +76,7 @@ var quirky = function() {
   console.log('Quirky Status is: ' + answer);
   alert('You think my Quirky status is: ' + answer + ', truth be told, I am but so is JavaScript! But it\'s FUN!');
   return answer;
-}
+};
 // This will display the alerts / answers to the prompts and confirms
 var military = militaryService();
 var years = dePloyed();
@@ -89,7 +89,7 @@ alert('so you guessed, ' + military + ' to the question of did I serve, ' + year
 if (fun === true){
   alert('Oh yes, and you think I am Quirky!');
 } else {
-  alert('Oh yes, and you actually think I am NOT Quirky when I actually am!')
+  alert('Oh yes, and you actually think I am NOT Quirky when I actually am!');
 }
 
 //sixth question added giving user four tries to guess a number
@@ -124,7 +124,7 @@ var guessing = function() {
       }
     }
   }
-}
+};
 guessing();
 
 // // seventh question added, asking wat type of books I like
@@ -149,6 +149,6 @@ var guessBooks = function() {
   if (!flag) {
     alert('Not a kind of book I like, but good guess.');
   }
-}
+};
 
 guessBooks();
